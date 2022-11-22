@@ -1,2 +1,2 @@
 #  Ohmyfood
-Projet N03 OpenClassroom
+Projet N°3 OpenClassroom
