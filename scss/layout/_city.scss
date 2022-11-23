@@ -1,0 +1,13 @@
+.city{
+    @include flex-center;
+    align-items: center;
+    background-color: #ebebeb;
+    gap: 1rem;
+    &__i{
+        font-size: 1rem;
+        &__p{
+            font-size: 1rem;
+            font-weight: 700;   
+}
+    }
+}

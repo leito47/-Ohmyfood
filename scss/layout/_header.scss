@@ -1,0 +1,10 @@
+.header{
+    @include flex-center;
+    width: 100vw;
+    padding : 1rem 0;
+    box-shadow: 1px 1px 7px 2px #CCCCCC;
+    position: relative;
+    &__img{
+        height: 1.8rem;
+    }
+}

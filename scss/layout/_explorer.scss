@@ -1,0 +1,13 @@
+.explorer{
+    @include flex-expl-form;
+    padding: 1rem;
+    background-color: #F7F7F7;
+    height: 15.6rem;
+    &__heading{
+        margin: 15px 0;
+        &__p{
+            margin: 0;
+           
+        }
+    }
+}
