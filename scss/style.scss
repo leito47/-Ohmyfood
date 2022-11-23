@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+@import "./utils/variables";
+@import "./utils/mixin";
+
 ::before, 
 ::aftter{
     box-sizing: border-box;
@@ -10,33 +13,30 @@ body{
     
 }
 .header{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     width: 100vw;
     padding : 1rem 0;
     box-shadow: 1px 1px 7px 2px #CCCCCC;
     position: relative;
+    &__img{
+        height: 1.8rem;
+    }
 }
-.header__img{
-    height: 1.8rem;
-}
+
 .city{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     align-items: center;
     background-color: #ebebeb;
-    gap: 1rem
+    gap: 1rem;
+    &__i{
+        font-size: 1rem;
+        &__p{
+            font-size: 1rem;
+            font-weight: 700;   
 }
-.city__i{
-    font-size: 1rem;
+    }
 }
 
-
-.city__p{
-    font-family: "Roboto";
-    font-size: 1rem;
-    font-weight: 700;
-}
 .explorer{
     display: flex;
     flex-direction: column;
@@ -44,26 +44,23 @@ body{
     text-align: center;
     padding: 1rem;
     background-color: #F7F7F7;
-    height: 250px;
-}
-.explorer__heading{
-    margin: 15px 0;
-}
-.explorer__p{
-    margin: 0;
+    height: 15.6rem;
+    &__heading{
+        margin: 15px 0;
+        &__p{
+            margin: 0;
+           
+        }
+    }
 }
 
-.explorer__button{
+.button{
     margin-top: 35px;
     padding: 1rem 2rem;
     font-size: 1rem;
     border: none;
     border-radius: 2rem ;
-    color: #fff;
-    box-shadow: 2px 2px 16px -7px #000000;
-    background: linear-gradient(to top left, #9356DC 7%, #FF79DA 100%);
-    
-
-    
-
+    color: $color-white;
+    box-shadow: 2px 2px 16px -7px $color-black;
+    background: linear-gradient(to top left, $color-primary 7%, $color-secondary 100%);
 }
