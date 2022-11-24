@@ -1,5 +1,6 @@
+@use "../utils/placeholders";
 .city{
-    @include flex-center;
+    @extend %flex-center;
     align-items: center;
     background-color: #ebebeb;
     gap: 1rem;
@@ -7,7 +8,10 @@
         font-size: 1rem;
         &__p{
             font-size: 1rem;
-            font-weight: 700;   
-}
+            font-weight: 700;
+        }  
     }
 }
+
+  
+   

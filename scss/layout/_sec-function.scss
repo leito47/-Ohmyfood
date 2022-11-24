@@ -1,0 +1,17 @@
+@use "../utils/placeholders";
+.sec-function{
+    padding: 0 1rem;  
+    & ol{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        & li{
+            
+            background-color: #f7f7f7;
+            padding: 1rem ;
+            border-radius: 1rem;
+            @extend %base-shadow;       
+    } 
+    }
+}

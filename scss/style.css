@@ -10,12 +10,26 @@ body {
   padding: 0;
 }
 
-.header {
+.form, .explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.city, .header {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.sec-function ol li, .form__button, .header {
+  box-shadow: 2px 2px 16px -7px #000;
+}
+
+.header {
   width: 100vw;
   padding: 1rem 0;
-  box-shadow: 1px 1px 7px 2px #CCCCCC;
   position: relative;
 }
 .header__img {
@@ -23,8 +37,6 @@ body {
 }
 
 .city {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #ebebeb;
   gap: 1rem;
@@ -38,10 +50,6 @@ body {
 }
 
 .explorer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   padding: 1rem;
   background-color: #F7F7F7;
   height: 15.6rem;
@@ -53,12 +61,6 @@ body {
   margin: 0;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 .form__button {
   margin-top: 15px;
   padding: 1rem 2rem;
@@ -66,8 +68,22 @@ body {
   border: none;
   border-radius: 2rem;
   color: #FFF;
-  box-shadow: 2px 2px 16px -7px #000;
   background: linear-gradient(to top left, #9356DC 7%, #FF79DA 100%);
+}
+
+.sec-function {
+  padding: 0 1rem;
+}
+.sec-function ol {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+.sec-function ol li {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
