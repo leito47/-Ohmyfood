@@ -10,14 +10,14 @@ body {
   padding: 0;
 }
 
-.form, .explorer {
+.sec-function ol, .form, .explorer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.city, .header {
+.sec-function ol li::before, .sec-function ol li, .city, .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,18 +72,38 @@ body {
 }
 
 .sec-function {
+  counter-reset: numero;
   padding: 0 1rem;
 }
 .sec-function ol {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
   padding: 1rem;
   gap: 1rem;
 }
 .sec-function ol li {
+  width: 15rem;
+  height: 2rem;
+  position: relative;
   background-color: #f7f7f7;
   padding: 1rem;
   border-radius: 1rem;
+}
+.sec-function ol li::before {
+  content: counter(numero);
+  counter-increment: numero;
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  position: absolute;
+  left: -1rem;
+  bottom: 1rem;
+}
+.sec-function ol li i {
+  margin-right: 1rem;
+  color: #7E7E7E;
 }
 
 /*# sourceMappingURL=style.css.map */
