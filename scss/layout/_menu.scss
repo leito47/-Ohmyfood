@@ -1,0 +1,17 @@
+@use "../utils/variables";
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$color-light-grey;
+    padding: 0 1rem;  
+    margin-top: 2.5rem;
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+    }    
+}
+.card{
+    border: 2px solid black;
+}

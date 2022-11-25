@@ -51,7 +51,7 @@ body {
 
 .explorer {
   padding: 1rem;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   height: 15.6rem;
 }
 .explorer__heading {
@@ -73,6 +73,7 @@ body {
 
 .sec-function {
   counter-reset: numero;
+  margin-top: 2.5rem;
   padding: 0 1rem;
 }
 .sec-function ol {
@@ -104,6 +105,23 @@ body {
 .sec-function ol li i {
   margin-right: 1rem;
   color: #7E7E7E;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 0 1rem;
+  margin-top: 2.5rem;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border: 2px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */

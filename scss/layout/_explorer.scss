@@ -1,8 +1,9 @@
 @use"../utils/placeholders";
+@use "../utils/variables";
 .explorer{
     @extend %flex-expl-form;
     padding: 1rem;
-    background-color: #F7F7F7;
+    background-color: variables.$color-light-grey;
     height: 15.6rem;
     &__heading{
         margin: 15px 0;

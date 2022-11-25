@@ -2,6 +2,7 @@
 @use "../utils/variables";
 .sec-function{
     counter-reset:numero;
+    margin-top: 2.5rem;
     padding: 0 1rem;  
     & ol{
         @extend %flex-expl-form;
@@ -31,7 +32,7 @@
                 
             }
             @extend %flex-center;
-            background-color: #f7f7f7;
+            background-color: variables.$color-light-grey;
             padding: 1rem ;
             border-radius: 1rem;
             @extend %base-shadow;
