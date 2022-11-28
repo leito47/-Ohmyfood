@@ -29,6 +29,10 @@ article {
   border-radius: 1rem;
 }
 
+footer {
+  background-color: #353535;
+}
+
 .sec-function ol, .form, .explorer {
   display: flex;
   flex-direction: column;
@@ -133,6 +137,9 @@ article {
   padding: 0 1rem;
   margin-top: 2.5rem;
 }
+.restaurants__function__h {
+  margin-top: 3.1rem;
+}
 .restaurants__cards {
   display: flex;
   flex-direction: column;
@@ -184,6 +191,27 @@ article {
 }
 .commentary__heart i {
   font-size: 1.3rem;
+}
+
+.logo-footer {
+  margin: 1.4rem 0 0 1.2rem;
+}
+
+.liste-footer {
+  height: 8.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 1.4rem;
+}
+.liste-footer__li {
+  margin-top: 0.6rem;
+}
+.liste-footer__li__a {
+  text-decoration: none;
+  color: #FFF;
+}
+.liste-footer__li__a__i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

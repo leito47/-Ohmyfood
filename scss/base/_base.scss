@@ -7,6 +7,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+   
     margin: 0;
     padding: 0;
    
@@ -25,4 +26,10 @@ article{
     margin-bottom: 1.8rem;
     background-color: variables.$color-white;
     border-radius: 1rem;
+}
+
+
+footer{
+    background-color: variables.$color-footer;
+    
 }

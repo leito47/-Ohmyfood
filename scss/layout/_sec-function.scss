@@ -27,9 +27,7 @@
                 color: variables.$color-white;
                 position: absolute;  
                 left: -0.6rem;
-                bottom: 1.4rem
-               
-                
+                bottom: 1.4rem                   
             }
             @extend %flex-center;
             background-color: variables.$color-light-grey;
@@ -39,7 +37,10 @@
             & i{
                 margin-right: 1rem;
                 color: #7E7E7E;
-            }                
+            } 
+                        
     }
-} 
+    
+}
+ 
 }

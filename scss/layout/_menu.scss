@@ -1,11 +1,13 @@
 @use "../utils/variables";
 .restaurants{
     display: flex;
-   
     flex-direction: column;
     background-color: variables.$color-light-grey;
     padding: 0 1rem;  
     margin-top: 2.5rem;
+    &__function__h{
+        margin-top: 3.1rem;
+    }
     &__cards{
         display: flex;
         flex-direction: column;
