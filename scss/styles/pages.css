@@ -27,10 +27,11 @@ p {
 }
 
 footer {
+  margin-top: 1.8rem;
   background-color: #353535;
 }
 
-.form {
+.btn-commander, .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +44,7 @@ footer {
   align-items: center;
 }
 
-.form__button, .header-pages {
+.btn-commander__button, .form__button, .header-pages {
   box-shadow: 2px 2px 16px -7px #000;
 }
 
@@ -73,11 +74,12 @@ footer {
 
 .menu {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  margin-top: -40px;
-  background-color: blue;
+  margin-top: -50px;
+  background-color: #f7f7f7;
   border-radius: 30px 30px 0 0;
 }
 .menu__heading {
@@ -104,7 +106,7 @@ footer {
 .entree {
   padding: 0.6rem;
   border-radius: 0.6rem;
-  background-color: aqua;
+  background-color: #FFF;
 }
 .entree__p {
   padding-bottom: 0.3rem;
@@ -113,6 +115,16 @@ footer {
 .entree__p-prix {
   display: flex;
   justify-content: space-between;
+}
+
+.form__button {
+  margin-top: 15px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: #FFF;
+  background: linear-gradient(to top left, #9356DC 7%, #FF79DA 100%);
 }
 
 .logo-footer {
@@ -133,10 +145,12 @@ footer {
   color: #FFF;
 }
 .liste-footer__li__a__i {
+  font-size: 0.8rem;
   margin-right: 10px;
 }
 
-.form__button {
+.btn-commander__button {
+  width: 55%;
   margin-top: 15px;
   padding: 1rem 2rem;
   font-size: 1rem;
