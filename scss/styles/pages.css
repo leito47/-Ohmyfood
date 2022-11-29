@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__button, .header-pages {
+  box-shadow: 2px 2px 16px -7px #000;
+}
+
+.header-pages {
+  width: 100vw;
+  padding: 1rem 0;
+  position: relative;
+}
+.header-pages__i {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  color: #000;
+  font-size: 1.2rem;
+}
+.header-pages__i__img {
+  width: 100vw;
+  height: 1.8rem;
+}
+
+.img__img {
+  width: 100%;
+  height: 15.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: -40px;
+  background-color: blue;
+  border-radius: 30px 30px 0 0;
+}
+.menu__heading {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 32px 0 0 15px;
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  align-items: center;
+}
+
+.menu-heading {
+  font-weight: 300;
+}
+
+.s-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.entree {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: aqua;
+}
+.entree__p {
+  padding-bottom: 0.3rem;
+  font-weight: 700;
+}
+.entree__p-prix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  margin: 1.4rem 0 0 1.2rem;
+}
+
+.liste-footer {
+  height: 8.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 1.4rem;
+}
+.liste-footer__li {
+  margin-top: 0.6rem;
+}
+.liste-footer__li__a {
+  text-decoration: none;
+  color: #FFF;
+}
+.liste-footer__li__a__i {
+  margin-right: 10px;
+}
+
+.form__button {
+  margin-top: 15px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: #FFF;
+  background: linear-gradient(to top left, #9356DC 7%, #FF79DA 100%);
+}/*# sourceMappingURL=pages.css.map */

@@ -9,10 +9,13 @@ body{
     font-family: 'Roboto', sans-serif;
    
     margin: 0;
-    padding: 0;
+    // padding: 0;
    
 }
 figure{
+    margin: 0;
+}
+h1{
     margin: 0;
 }
 h3{
@@ -21,14 +24,6 @@ h3{
 p{
     margin: 0;
 }
-article{
-    position: relative;
-    margin-bottom: 1.8rem;
-    background-color: variables.$color-white;
-    border-radius: 1rem;
-}
-
-
 footer{
     background-color: variables.$color-footer;
     
