@@ -1,5 +1,7 @@
 @use "../utils/placeholders";
 @use "../utils/variables";
+@use "../utils/mixins";
+
 .btn-commander{
     @extend %flex-expl-form;
     &__button{ 
@@ -10,8 +12,25 @@
         border: none;
         border-radius: 2rem ;
         color: variables.$color-white;
+        opacity: 1;
+        transition: 0.3s;
         @extend %base-shadow;
+ 
         background: linear-gradient(to top left, variables.$color-primary 7%, variables.$color-secondary 100%);
-    }   
+        
+        }
+    
+        &__button:hover{
+            cursor: pointer;
+            opacity: 0.8;
+            transition: 0.3s;
+            box-shadow :0px 0px 7px 6px variables.$color-primary ;
+            
+        }
+    }
+    
+    
 
-}
+        
+ 
+

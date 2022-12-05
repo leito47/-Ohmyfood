@@ -1,4 +1,5 @@
 @use "../utils/variables";
+@use "../utils/placeholders";
 .restaurants{
     display: flex;
     flex-direction: column;
@@ -37,6 +38,7 @@ article{
     margin-bottom: 1.8rem;
     background-color: variables.$color-white;
     border-radius: 1rem;
+    @extend %base-shadow;
 }
 
   

@@ -27,7 +27,6 @@ p {
 }
 
 footer {
-  margin-top: 1.8rem;
   background-color: #353535;
 }
 
@@ -44,8 +43,8 @@ footer {
   align-items: center;
 }
 
-.sec-function ol li, .form__button, .header {
-  box-shadow: 2px 2px 16px -7px #000;
+article, .sec-function ol li, .form__button, .header {
+  box-shadow: 2px 2px 8px -3px grey;
 }
 
 .header {
@@ -89,7 +88,14 @@ footer {
   border: none;
   border-radius: 2rem;
   color: #FFF;
+  transition: 0.3s;
   background: linear-gradient(to top left, #9356DC 7%, #FF79DA 100%);
+}
+.form__button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+  box-shadow: 0px 0px 7px 6px #9356DC;
 }
 
 .sec-function {
@@ -103,12 +109,20 @@ footer {
   gap: 1rem;
 }
 .sec-function ol li {
+  opacity: 1;
+  transition: 0.3s;
   width: 15rem;
   height: 2rem;
   position: relative;
   background-color: #f7f7f7;
   padding: 1rem;
   border-radius: 1rem;
+}
+.sec-function ol li:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+  box-shadow: 0px 0px 7px 6px #9356DC;
 }
 .sec-function ol li::before {
   content: counter(numero);
@@ -219,4 +233,42 @@ article {
 .liste-footer__li__a__i {
   font-size: 0.8rem;
   margin-right: 10px;
+}
+
+@-webkit-keyframes slow-appear {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slow-appear {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes check-rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }/*# sourceMappingURL=index.css.map */

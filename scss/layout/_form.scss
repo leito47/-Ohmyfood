@@ -10,7 +10,16 @@
         border-radius: 2rem ;
         color: variables.$color-white;
         @extend %base-shadow;
+        transition: 0.3s;
         background: linear-gradient(to top left, variables.$color-primary 7%, variables.$color-secondary 100%);
+       
+
+        }
+        &__button:hover{
+            cursor: pointer;
+            opacity: 0.9; 
+            transition: 0.3s;
+            box-shadow :0px 0px 7px 6px variables.$color-primary ;
     }   
 
 }
