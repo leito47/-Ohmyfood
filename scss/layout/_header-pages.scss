@@ -1,7 +1,6 @@
-// @use "../base/base";
 @use "../utils/placeholders";
 @use "../utils/variables";
-@use "../utils/animations";
+
 
 
 .header-pages {
@@ -13,10 +12,16 @@
 
     &__i {
         position: absolute;
-        left: 10px;
-        top: 20px;
+        left: 0.6rem;
+        top: 1.2rem;
         color: variables.$color-black;
         font-size: 1.2rem;
+    
+        &:hover{
+           
+         color: variables.$color-primary;
+        }
+
 
         &__img {
             width: 100vw;
@@ -33,116 +38,3 @@
     }
 }
 
-.menu {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: -50px;
-    background-color: variables.$color-light-grey;
-    border-radius: 30px 30px 0 0;
-
-    &__heading {
-        display: flex;
-        justify-content: space-between;
-        width: 85%;
-        margin: 32px 0 0 15px;
-        font-family: "Shrikhand", cursive;
-        font-size: 25px;
-        align-items: center;
-    }
-}
-
-.menu-heading {
-    font-size: 1rem;
-    font-weight: 400;
-    position: relative;
-
-    &::after {
-        content: "";
-        height: 0.25rem;
-        width: 2.7rem;
-        position: absolute;
-        top: 1.5rem;
-        left: 0;
-        background-color: variables.$color-tertiary;
-
-    }
-}
-
-
-
-
-
-
-.s-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 1rem;
-}
-
-.entree {
-    display: flex;
-    cursor: pointer;
-    border-radius: 0.6rem;
-    @extend %base-shadow;
-    background-color: variables.$color-white;
-    animation: slow-appear 3s;
-    overflow: hidden;
-
-    &__description {
-        display: flex;
-        flex-direction: column;
-        padding: 0.6rem;
-    }
-
-    &__commentary {
-        font-size: 0.8rem;
-    }
-
-    &__h {
-        font-size: 1rem;
-        padding-bottom: 0.3rem;
-    }
-
-    &__p {
-        margin-left: auto;
-        padding: 0 1rem 0.5rem 0.6rem;
-        display: flex;
-        align-items: flex-end;
-        font-weight: 700;
-
-    }
-    .item__check {
-        width: 3rem;
-        @extend %flex-center;
-        background-color: variables.$color-tertiary;
-        margin-right: -3rem;
-        transition: margin-right 0.5s;
-        
-    
-    i {
-        padding: 0.3rem;
-        border-radius: 3.1rem;
-        background-color: variables.$color-white;
-        color: variables.$color-tertiary;
-      
-    }
-   
-    
-}
- 
-&:hover .item__check {
-    margin-right: 0;
-    i{
-        animation: check-rotate 0.5s ;
-      
-    }
-   
-}
-
-
-    
-}
