@@ -14,12 +14,12 @@
     &__entete {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
     }
 
     &__heading {
         display: flex;
-        margin: 2rem 0 0 0.9rem;
+        margin: 0.9rem 0 0 0.9rem;
         font-family: "Shrikhand", cursive;
         font-size: 1.5rem;
         align-items: center;
@@ -54,10 +54,11 @@
         }
 
     }
+}
 
 
 
-    .menu-heading {
+.menu-heading {
         font-size: 1rem;
         font-weight: 400;
         position: relative;
@@ -74,14 +75,28 @@
         }
     }
 
-    .s-menu {
+
+.menus-card{
+    @media screen and (min-width: 1100px)  {
+        display: flex;
+        flex-direction: row; 
+        margin-left: 0.6rem;   
+    }      
+
+}
+
+.s-menu {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
         padding: 1rem;
+        background-color: variables.$color-light-grey;
+        @media screen and (min-width: 1100px)  {
+            width: 30%;  
+        }     
     }
 
-    .entree {
+.entree {
         display: flex;
         cursor: pointer;
         border-radius: 0.6rem;
@@ -89,6 +104,7 @@
         background-color: variables.$color-white;
         animation: slow-appear 3s;
         overflow: hidden;
+       
 
         &__description {
             display: flex;
@@ -142,4 +158,3 @@
 
 
     }
-}

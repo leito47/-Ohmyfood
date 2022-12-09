@@ -10,7 +10,11 @@ body {
   padding: 0;
 }
 
-figure {
+main {
+  background-color: #f7f7f7;
+}
+
+h2 {
   margin: 0;
 }
 
@@ -30,20 +34,20 @@ footer {
   background-color: #353535;
 }
 
-.sec-function ol, .form, .explorer {
+.sec-function .liste-index, .form, .explorer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.sec-function ol li::before, .sec-function ol li, .city, .header {
+.sec-function .liste-index li::before, .sec-function .liste-index li, .city, .header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-article, .sec-function ol li, .form__button, .header {
+.article-restaurant, .sec-function .liste-index li, .form__button, .header {
   box-shadow: 2px 2px 8px -3px grey;
 }
 
@@ -60,6 +64,7 @@ article, .sec-function ol li, .form__button, .header {
   align-items: center;
   background-color: #ebebeb;
   gap: 1rem;
+  padding: 0.6rem;
 }
 .city__i {
   font-size: 1rem;
@@ -73,6 +78,11 @@ article, .sec-function ol li, .form__button, .header {
   padding: 1rem;
   background-color: #f7f7f7;
   height: 15.6rem;
+}
+@media screen and (min-width: 800px) {
+  .explorer {
+    height: 10.6rem;
+  }
 }
 .explorer__heading {
   margin: 15px 0;
@@ -103,12 +113,19 @@ article, .sec-function ol li, .form__button, .header {
   margin-top: 2.5rem;
   padding: 0 1rem;
 }
-.sec-function ol {
+.sec-function .liste-index {
   list-style: none;
   padding: 1rem;
   gap: 1rem;
 }
-.sec-function ol li {
+@media screen and (min-width: 800px) {
+  .sec-function .liste-index {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+}
+.sec-function .liste-index li {
   opacity: 1;
   transition: 0.3s;
   width: 15rem;
@@ -119,14 +136,14 @@ article, .sec-function ol li, .form__button, .header {
   padding: 1rem;
   border-radius: 1rem;
 }
-.sec-function ol li:hover {
+.sec-function .liste-index li:hover {
   cursor: pointer;
   background-color: #f5edff;
 }
-.sec-function ol li:hover i {
+.sec-function .liste-index li:hover i {
   color: #9356DC;
 }
-.sec-function ol li::before {
+.sec-function .liste-index li::before {
   content: counter(numero);
   counter-increment: numero;
   width: 0.6rem;
@@ -139,7 +156,7 @@ article, .sec-function ol li, .form__button, .header {
   left: -0.6rem;
   bottom: 1.4rem;
 }
-.sec-function ol li i {
+.sec-function .liste-index li i {
   margin-right: 1rem;
   color: #7E7E7E;
 }
@@ -159,6 +176,15 @@ article, .sec-function ol li, .form__button, .header {
   flex-direction: column;
   gap: 1rem;
 }
+@media screen and (min-width: 800px) {
+  .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+    gap: 2rem;
+  }
+}
 .restaurants .new {
   display: flex;
   justify-content: center;
@@ -175,11 +201,15 @@ article, .sec-function ol li, .form__button, .header {
   margin: 0;
 }
 
-article {
+.article-restaurant {
   position: relative;
-  margin-bottom: 1.8rem;
   background-color: #FFF;
   border-radius: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .article-restaurant {
+    width: 40%;
+  }
 }
 
 .card {
@@ -229,6 +259,16 @@ article {
   transform: scale(1.2);
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .footer {
+    align-items: center;
+  }
+}
+
 .logo-footer {
   margin: 1.4rem 0 0 1.2rem;
 }
@@ -238,6 +278,13 @@ article {
   list-style: none;
   padding: 0;
   margin: 0 0 0 1.4rem;
+}
+@media screen and (min-width: 800px) {
+  .liste-footer {
+    display: flex;
+    margin: 20px 0 0 0;
+    gap: 50px;
+  }
 }
 .liste-footer__li {
   margin-top: 0.6rem;

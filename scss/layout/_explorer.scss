@@ -5,10 +5,14 @@
     padding: 1rem;
     background-color: variables.$color-light-grey;
     height: 15.6rem;
+    @media screen and (min-width: 800px)  {
+        height: 10.6rem;   
+    }  
     &__heading{
         margin: 15px 0;
         &__p{
-            margin: 0;           
+            margin: 0;
+                        
         }
     }
 }

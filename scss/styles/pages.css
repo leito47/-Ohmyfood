@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+main {
+  background-color: #f7f7f7;
+}
+
 h2 {
   margin: 0;
 }
@@ -37,17 +41,17 @@ footer {
   text-align: center;
 }
 
-.menu .entree .item__check, .header-pages {
+.entree .item__check, .header-pages {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
+.article-restaurant, .entree, .btn-commander__button, .form__button, .header-pages {
   box-shadow: 2px 2px 8px -3px grey;
 }
 
-.menu .entree__commentary, .menu .entree__h {
+.entree__commentary, .entree__h {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -79,6 +83,11 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 1100px) {
+  .img__img {
+    height: 33rem;
+  }
+}
 
 .form__button {
   margin-top: 15px;
@@ -97,6 +106,16 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   box-shadow: 0px 0px 7px 6px #9356DC;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .footer {
+    align-items: center;
+  }
+}
+
 .logo-footer {
   margin: 1.4rem 0 0 1.2rem;
 }
@@ -106,6 +125,13 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   list-style: none;
   padding: 0;
   margin: 0 0 0 1.4rem;
+}
+@media screen and (min-width: 800px) {
+  .liste-footer {
+    display: flex;
+    margin: 20px 0 0 0;
+    gap: 50px;
+  }
 }
 .liste-footer__li {
   margin-top: 0.6rem;
@@ -121,6 +147,12 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
 
 .btn-commander {
   padding-bottom: 1.5rem;
+  background-color: #f7f7f7;
+}
+@media screen and (min-width: 1100px) {
+  .btn-commander {
+    margin: 3rem;
+  }
 }
 .btn-commander__button {
   width: 55%;
@@ -133,6 +165,16 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   opacity: 1;
   transition: 0.3s;
   background: linear-gradient(to top left, #9356DC 7%, #FF79DA 100%);
+}
+@media screen and (min-width: 800px) {
+  .btn-commander__button {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .btn-commander__button {
+    width: 20%;
+  }
 }
 .btn-commander__button:hover {
   cursor: pointer;
@@ -190,11 +232,11 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
 .menu__entete {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .menu__heading {
   display: flex;
-  margin: 2rem 0 0 0.9rem;
+  margin: 0.9rem 0 0 0.9rem;
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
   align-items: center;
@@ -224,12 +266,13 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   opacity: 1;
   transform: scale(1.2);
 }
-.menu .menu-heading {
+
+.menu-heading {
   font-size: 1rem;
   font-weight: 400;
   position: relative;
 }
-.menu .menu-heading::after {
+.menu-heading::after {
   content: "";
   height: 0.25rem;
   width: 2.7rem;
@@ -238,13 +281,29 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   left: 0;
   background-color: #99E2D0;
 }
-.menu .s-menu {
+
+@media screen and (min-width: 1100px) {
+  .menus-card {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.6rem;
+  }
+}
+
+.s-menu {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   padding: 1rem;
+  background-color: #f7f7f7;
 }
-.menu .entree {
+@media screen and (min-width: 1100px) {
+  .s-menu {
+    width: 30%;
+  }
+}
+
+.entree {
   display: flex;
   cursor: pointer;
   border-radius: 0.6rem;
@@ -253,42 +312,42 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
           animation: slow-appear 3s;
   overflow: hidden;
 }
-.menu .entree__description {
+.entree__description {
   display: flex;
   flex-direction: column;
   padding: 0.6rem;
   overflow: hidden;
 }
-.menu .entree__commentary {
+.entree__commentary {
   font-size: 0.8rem;
 }
-.menu .entree__h {
+.entree__h {
   font-size: 1rem;
   padding-bottom: 0.3rem;
 }
-.menu .entree__p {
+.entree__p {
   margin-left: auto;
   padding: 0 1rem 0.5rem 0.6rem;
   display: flex;
   align-items: flex-end;
   font-weight: 700;
 }
-.menu .entree .item__check {
+.entree .item__check {
   width: 3rem;
   background-color: #99E2D0;
   margin-right: -3rem;
   transition: margin-right 0.5s;
 }
-.menu .entree .item__check i {
+.entree .item__check i {
   padding: 0.3rem;
   border-radius: 3.1rem;
   background-color: #FFF;
   color: #99E2D0;
 }
-.menu .entree:hover .item__check {
+.entree:hover .item__check {
   margin-right: 0;
 }
-.menu .entree:hover .item__check i {
+.entree:hover .item__check i {
   -webkit-animation: check-rotate 0.5s;
           animation: check-rotate 0.5s;
 }
@@ -308,6 +367,15 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   flex-direction: column;
   gap: 1rem;
 }
+@media screen and (min-width: 800px) {
+  .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+    gap: 2rem;
+  }
+}
 .restaurants .new {
   display: flex;
   justify-content: center;
@@ -324,10 +392,15 @@ article, .menu .entree, .btn-commander__button, .form__button, .header-pages {
   margin: 0;
 }
 
-article {
+.article-restaurant {
   position: relative;
   background-color: #FFF;
   border-radius: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .article-restaurant {
+    width: 40%;
+  }
 }
 
 .card {
