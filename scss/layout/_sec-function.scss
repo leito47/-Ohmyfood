@@ -1,62 +1,83 @@
 @use "../utils/placeholders";
 @use "../utils/variables";
-.sec-function{
-    counter-reset:numero;
+
+.sec-function {
+    counter-reset: numero;
     margin-top: 2.5rem;
-    padding: 0 1rem;  
-    & .liste-index{
-        @extend %flex-expl-form; 
-        list-style: none;
-        padding: 1rem;
-        gap: 1rem;
-        @media screen and (min-width: 800px)  {
-            flex-direction: row;
-            justify-content: space-evenly;
-            gap: 30px;
-            
-        }
-        & li{
-            opacity: 1;
-            transition: 0.3s;
-            width: 15rem;
-            height: 2rem;
-            position: relative;
-            transition: 0.3s;
-            &:hover{
-                cursor: pointer; 
-                background-color: #f5edff;
-                i{
-                    color: variables.$color-primary;
-                }
-            }
-            &::before{ 
-                @extend %flex-center; 
-                content: counter(numero);
-                counter-increment: numero;
-                width: .6rem;
-                height: .6rem;
-                padding: 0.6rem;
-                border-radius: 50%;
-                background-color: variables.$color-primary;
-                color: variables.$color-white;
-                position: absolute;  
-                left: -0.6rem;
-                bottom: 1.4rem ;
-                        
-            }
-            @extend %flex-center;
-            background-color: variables.$color-light-grey;
-            padding: 1rem ;
-            border-radius: 1rem;
-            @extend %base-shadow;
-            
-            & i{
-                margin-right: 1rem;
-                color: #7E7E7E;
-            } 
-                        
+    padding: 0 1rem;
+    background-color: variables.$color-white;
+    height: 25.7rem;
+    @media screen and (min-width: 800px) {
+        height: 17.7rem;
+
     }
-    
+
+    &__header {
+        padding-top: 2rem;
+    }
 }
- 
+
+.liste-index {
+    @extend %flex-expl-form;
+    list-style: none;
+    padding: 1rem;
+    gap: 1.5rem;
+
+    @media screen and (min-width: 800px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        gap: 30px;
+
+    }
+
+    & li {
+        opacity: 1;
+        transition: 0.3s;
+        width: 15rem;
+        height: 2rem;
+        position: relative;
+        transition: 0.3s;
+        color: variables.$color-black;
+        font-weight: 700;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #f5edff;
+
+            i {
+                color: variables.$color-primary;
+            }
+        }
+
+        &::before {
+            @extend %flex-center;
+            content: counter(numero);
+            counter-increment: numero;
+            width: .6rem;
+            height: .6rem;
+            padding: 0.6rem;
+            border-radius: 50%;
+            background-color: variables.$color-primary;
+            color: variables.$color-white;
+            position: absolute;
+            left: -0.6rem;
+            bottom: 1.4rem;
+
+        }
+
+        @extend %flex-center;
+        background-color: variables.$color-light-grey;
+        padding: 1rem;
+        border-radius: 1rem;
+        @extend %base-shadow;
+
+        & i {
+            margin-right: 1rem;
+            color: #7E7E7E;
+        }
+
+
+    }
+
 }

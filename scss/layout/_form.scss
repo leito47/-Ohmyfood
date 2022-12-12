@@ -2,6 +2,7 @@
 @use "../utils/variables";
 .form{
     @extend %flex-expl-form;
+    padding-top: 1.2rem;
     &__button{ 
         margin-top: 15px;
         padding: 1rem 2rem;

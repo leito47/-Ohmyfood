@@ -89,6 +89,9 @@ footer {
   }
 }
 
+.form {
+  padding-top: 1.2rem;
+}
 .form__button {
   margin-top: 15px;
   padding: 1rem 2rem;
@@ -169,6 +172,7 @@ footer {
 @media screen and (min-width: 800px) {
   .btn-commander__button {
     width: 30%;
+    margin: 3rem;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -357,15 +361,20 @@ footer {
   flex-direction: column;
   background-color: #f7f7f7;
   padding: 0 1rem 2rem 1rem;
-  margin-top: 2.5rem;
+  height: 73rem;
+}
+@media screen and (min-width: 800px) {
+  .restaurants {
+    height: 42rem;
+  }
 }
 .restaurants__function__h {
-  margin-top: 3.1rem;
+  margin: 3.1rem 0 1rem 0;
 }
 .restaurants__cards {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.3rem;
 }
 @media screen and (min-width: 800px) {
   .restaurants__cards {
