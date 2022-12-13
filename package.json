@@ -4,8 +4,8 @@
   "description": "Projet 3 Openclassroom OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/styles/index.scss scss/styles/index.css"
-   
+    "sass": "sass --watch scss/styles/index.scss scss/styles/index.css",
+    "prefix": "postcss ./scss/styles/*.css  --use autoprefixer -d ./scss/styles/prefixed/"   
   },
   "repository": {
     "type": "git",
@@ -13,29 +13,34 @@
   },
   "author": "Gautier Laurent",
   "license": "ISC",
+  "broserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/leito47/-Ohmyfood/issues"
   },
   "homepage": "https://github.com/leito47/-Ohmyfood#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "npm": "^9.2.0",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.56.1"
   },
   "dependencies": {
     "anymatch": "^3.1.3",
-    "chokidar": "^3.5.3",
-    "braces": "^3.0.2",
-    "fill-range": "^7.0.1",
     "binary-extensions": "^2.2.0",
+    "braces": "^3.0.2",
+    "chokidar": "^3.5.3",
+    "fill-range": "^7.0.1",
     "glob-parent": "^5.1.2",
-    "is-binary-path": "^2.1.0",
-    "is-glob": "^4.0.3",
-    "is-extglob": "^2.1.1",
     "immutable": "^4.1.0",
-    "picomatch": "^2.3.1",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
     "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.1",
     "readdirp": "^3.6.0",
-    "to-regex-range": "^5.0.1",
-    "source-map-js": "^1.0.2"
+    "source-map-js": "^1.0.2",
+    "to-regex-range": "^5.0.1"
   }
 }
