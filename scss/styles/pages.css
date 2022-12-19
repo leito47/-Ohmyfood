@@ -106,7 +106,7 @@ footer {
   cursor: pointer;
   opacity: 0.9;
   transition: 0.3s;
-  box-shadow: 0px 0px 7px 6px #9356DC;
+  box-shadow: 0px 0px 6px 3px grey;
 }
 
 .footer {
@@ -184,7 +184,7 @@ footer {
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  box-shadow: 0px 0px 7px 6px #9356DC;
+  box-shadow: 0px 0px 6px 3px grey;
 }
 
 @-webkit-keyframes slow-appear {
@@ -224,6 +224,26 @@ footer {
     transform: rotate(0deg);
   }
 }
+#article_1, #article_4, #article_7 {
+  -webkit-animation: slow-appear 600ms ease-in;
+          animation: slow-appear 600ms ease-in;
+}
+
+#article_2, #article_5, #article_8 {
+  -webkit-animation: slow-appear 1.2s ease-in;
+          animation: slow-appear 1.2s ease-in;
+}
+
+#article_3, #article_6, #article_9 {
+  -webkit-animation: slow-appear 1.8s ease-in;
+          animation: slow-appear 1.8s ease-in;
+}
+
+#article_10 {
+  -webkit-animation: slow-appear 2.4s ease-in;
+          animation: slow-appear 2.4s ease-in;
+}
+
 .menu {
   width: 100%;
   display: flex;

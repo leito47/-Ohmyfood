@@ -2,7 +2,7 @@
 @use "../utils/placeholders";
 .header{
     @extend %flex-center;
-    width: 100vw;
+    width: 100%;
     padding : 1rem 0;
     @extend %base-shadow;
     position: relative;
