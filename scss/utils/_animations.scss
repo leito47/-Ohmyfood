@@ -22,19 +22,19 @@
 
 
 
-#article_1, #article_4, #article_7{
+#article_1, #article_2, #article_3, #article_10{
   
     animation: slow-appear 600ms ease-in;
  
 }
-#article_2, #article_5, #article_8 {
+#article_4, #article_5, #article_6 {
     animation: slow-appear 1.2s ease-in;
   }
   
-  #article_3, #article_6, #article_9 {
+  #article_7, #article_8, #article_9 {
     animation: slow-appear 1.8s ease-in;
   }
   
-  #article_10 {
-    animation: slow-appear 2.4s ease-in;
-  }
+//   #article_10 {
+//     animation: slow-appear 2.4s ease-in;
+//   }
